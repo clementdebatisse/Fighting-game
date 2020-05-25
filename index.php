@@ -90,7 +90,7 @@ elseif (isset($_GET['hit'])) // Si on a cliqué sur un personnage pour le hit.
           break;
         
         case Character::CHARACTER_HIT :
-          $message = 'Le personnage a bien été frappé !';
+          $message = 'Le personnage a été marave  !';
           
           $manager->update($perso);
           $manager->update($persoAFrapper);
@@ -98,7 +98,7 @@ elseif (isset($_GET['hit'])) // Si on a cliqué sur un personnage pour le hit.
           break;
         
         case Character::CHARACTER_KILLED :
-          $message = 'Vous avez tué ce personnage !';
+          $message = 'Le personnage a été tué !';
           
           $manager->update($perso);
           $manager->delete($persoAFrapper);

@@ -21,6 +21,7 @@ class CharactersManager
     $character->hydrate([
       'id' => $this->_db->lastInsertId(),
       'damages' => 0,
+      'level' => 1,
     ]);
   }
   
