@@ -110,9 +110,9 @@ class Character
         }
     }
 
-    public function nomValide()
+    public function nameValide()
     {
-      return !empty($this->_nom);
+      return !empty($this->_name);
     }
     
 

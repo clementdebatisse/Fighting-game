@@ -35,9 +35,9 @@ if (isset($_POST['creer']) && isset($_POST['name'])) // Si on a voulu créer un 
 {
   $perso = new Character(['name' => $_POST['name']]); // On crée un nouveau personnage.
   
-  if (!$perso->nomValide())
+  if (!$perso->nameValide())
   {
-    $message = 'Le name choisi est invalide.';
+    $message = 'Le nom choisi est invalide.';
     unset($perso);
   }
   elseif ($manager->exists($perso->name()))
